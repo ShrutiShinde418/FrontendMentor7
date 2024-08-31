@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.activity__card {
+  @apply rounded-xl relative overflow-hidden flex flex-col;
+}
+
+.activity__section {
+  @apply p-8 rounded-xl absolute w-full h-[80%] -bottom-0 flex flex-col gap-6;
+}
+
+.activity__header {
+  @apply flex justify-between items-center;
+}
+
+.activity__title {
+  @apply text-lg font-medium;
+}
+
+.activity__info {
+  @apply flex flex-col gap-3;
+}
+
+.activity__time {
+  @apply text-5xl font-extralight;
+}
