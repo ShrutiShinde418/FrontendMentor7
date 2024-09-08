@@ -13,8 +13,9 @@ module.exports = {
         softOrange: "hsl(43, 84%, 65%)",
         veryDarkBlue: "hsl(226, 43%, 10%)",
         darkBlue: "hsl(235, 46%, 20%)",
-        desaturedBlue: "hsl(235, 45%, 61%)",
+        desaturatedBlue: "hsl(235, 45%, 61%)",
         paleBlue: "hsl(236, 100%, 87%)",
+        bgHoverColor: "#373c78",
       },
       fontFamily: {
         rubik: "Rubik",

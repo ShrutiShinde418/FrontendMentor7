@@ -8,7 +8,7 @@
 }
 
 .activity__section {
-  @apply p-8 rounded-xl absolute w-full h-[80%] -bottom-0 flex flex-col gap-6;
+  @apply xl:p-8 p-6 rounded-xl absolute w-full h-[80%] -bottom-0 flex flex-col lg:gap-6 gap-3;
 }
 
 .activity__header {
@@ -16,7 +16,7 @@
 }
 
 .activity__title {
-  @apply text-lg font-medium;
+  @apply lg:text-lg text-sm font-medium;
 }
 
 .activity__info {
@@ -24,5 +24,10 @@
 }
 
 .activity__time {
-  @apply text-5xl font-extralight;
+  @apply lg:text-5xl text-4xl font-extralight;
+}
+
+.button:hover {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(90%) saturate(39%)
+    hue-rotate(113deg) brightness(109%) contrast(97%);
 }

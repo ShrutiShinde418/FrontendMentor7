@@ -13,26 +13,36 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body
-    class="font-rubik min-h-screen grid place-items-center bg-veryDarkBlue text-white mx-24 mt-10 mb-10"
+    class="font-rubik min-h-screen grid place-items-center bg-veryDarkBlue text-white xl:mx-24 lg:mx-16 md:mx-8 mt-10 mb-10"
   >
-    <main class="grid grid-cols-4 grid-rows-2 gap-9">
+    <main class="grid grid-cols-4 grid-rows-2 lg:gap-9 gap-6">
       <div class="row-span-2">
         <div class="bg-darkBlue rounded-2xl">
-          <div class="bg-blue pl-8 pr-4 pt-8 pb-20 rounded-2xl flex flex-col">
+          <div
+            class="bg-blue lg:pl-8 pl-6 lg:pr-4 pr-3 lg:pt-8 pt-10 lg:pb-20 pb-14 rounded-2xl flex flex-col"
+          >
             <img
               src="./images/image-jeremy.png"
               alt="Jeremy Robson"
               class="w-2/5 border-box border-[3px] border-white rounded-full"
             />
             <h1 class="mt-9 mb-1 text-paleBlue">Report for</h1>
-            <h1 class="text-4xl font-extralight leading-tight">
+            <h1 class="lg:text-4xl text-3xl font-extralight leading-tight">
               Jeremy Robson
             </h1>
           </div>
           <div class="p-8 flex flex-col gap-4">
-            <h2 class="text-desaturedBlue text-lg">Daily</h2>
-            <h2 class="text-lg">Weekly</h2>
-            <h2 class="text-desaturedBlue text-lg">Monthly</h2>
+            <h2
+              class="text-desaturatedBlue lg:text-lg text-base hover:text-white"
+            >
+              <a href="#">Daily</a>
+            </h2>
+            <h2 class="lg:text-lg text-base"><a href="#">Weekly</a></h2>
+            <h2
+              class="text-desaturatedBlue lg:text-lg text-base hover:text-white"
+            >
+              <a href="#">Monthly</a>
+            </h2>
           </div>
         </div>
       </div>
@@ -40,16 +50,18 @@
         <div class="flex justify-end">
           <img src="./images/icon-work.svg" alt="Work" class="mr-5" />
         </div>
-        <div class="bg-darkBlue activity__section">
+        <div
+          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
+        >
           <div class="activity__header">
             <p class="activity__title">Work</p>
-            <button type="button">
+            <button type="button" class="button">
               <img src="./images/icon-ellipsis.svg" alt="Ellipsis" />
             </button>
           </div>
           <div class="activity__info">
             <p class="activity__time">32hrs</p>
-            <p class="text-desaturedBlue">Last Week - 36hrs</p>
+            <p class="text-desaturatedBlue">Last Week - 36hrs</p>
           </div>
         </div>
       </div>
@@ -57,16 +69,18 @@
         <div class="flex justify-end">
           <img src="./images/icon-play.svg" alt="Play" class="mr-5" />
         </div>
-        <div class="bg-darkBlue activity__section">
+        <div
+          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
+        >
           <div class="activity__header">
             <p class="activity__title">Play</p>
-            <button type="button">
+            <button type="button" class="button">
               <img src="./images/icon-ellipsis.svg" alt="Ellipsis" />
             </button>
           </div>
           <div class="activity__info">
             <p class="activity__time">10hrs</p>
-            <p class="text-desaturedBlue">Last Week - 8hrs</p>
+            <p class="text-desaturatedBlue">Last Week - 8hrs</p>
           </div>
         </div>
       </div>
@@ -74,16 +88,18 @@
         <div class="flex justify-end">
           <img src="./images/icon-study.svg" alt="Study" class="mr-5" />
         </div>
-        <div class="bg-darkBlue activity__section">
+        <div
+          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
+        >
           <div class="activity__header">
             <p class="activity__title">Study</p>
-            <button type="button">
+            <button type="button" class="button">
               <img src="./images/icon-ellipsis.svg" alt="Ellipsis" />
             </button>
           </div>
           <div class="activity__info">
             <p class="activity__time">4hrs</p>
-            <p class="text-desaturedBlue">Last Week - 7hrs</p>
+            <p class="text-desaturatedBlue">Last Week - 7hrs</p>
           </div>
         </div>
       </div>
@@ -91,16 +107,18 @@
         <div class="flex justify-end">
           <img src="./images/icon-exercise.svg" alt="Exercise" class="mr-5" />
         </div>
-        <div class="bg-darkBlue activity__section">
+        <div
+          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
+        >
           <div class="activity__header">
             <p class="activity__title">Exercise</p>
-            <button type="button">
+            <button type="button" class="button">
               <img src="./images/icon-ellipsis.svg" alt="Ellipsis" />
             </button>
           </div>
           <div class="activity__info">
             <p class="activity__time">4hrs</p>
-            <p class="text-desaturedBlue">Last Week - 5hrs</p>
+            <p class="text-desaturatedBlue">Last Week - 5hrs</p>
           </div>
         </div>
       </div>
@@ -108,16 +126,18 @@
         <div class="flex justify-end">
           <img src="./images/icon-social.svg" alt="Social" class="mr-5" />
         </div>
-        <div class="bg-darkBlue activity__section">
+        <div
+          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
+        >
           <div class="activity__header">
             <p class="activity__title">Social</p>
-            <button type="button">
+            <button type="button" class="button">
               <img src="./images/icon-ellipsis.svg" alt="Ellipsis" />
             </button>
           </div>
           <div class="activity__info">
             <p class="activity__time">5hrs</p>
-            <p class="text-desaturedBlue">Last Week - 10hrs</p>
+            <p class="text-desaturatedBlue">Last Week - 10hrs</p>
           </div>
         </div>
       </div>
@@ -125,16 +145,18 @@
         <div class="flex justify-end">
           <img src="./images/icon-self-care.svg" alt="Self Care" class="mr-5" />
         </div>
-        <div class="bg-darkBlue activity__section">
+        <div
+          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
+        >
           <div class="activity__header">
             <p class="activity__title">Self Care</p>
-            <button type="button">
+            <button type="button" class="button">
               <img src="./images/icon-ellipsis.svg" alt="Ellipsis" />
             </button>
           </div>
           <div class="activity__info">
             <p class="activity__time">2hrs</p>
-            <p class="text-desaturedBlue">Last Week - 2hrs</p>
+            <p class="text-desaturatedBlue">Last Week - 2hrs</p>
           </div>
         </div>
       </div>
