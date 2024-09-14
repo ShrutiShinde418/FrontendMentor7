@@ -13,25 +13,31 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body
-    class="font-rubik min-h-screen grid place-items-center bg-veryDarkBlue text-white xl:mx-24 lg:mx-16 md:mx-8 mt-10 mb-10"
+    class="font-rubik min-h-screen grid sm:place-items-center bg-veryDarkBlue text-white xl:mx-24 lg:mx-16 mx-8 mt-10 mb-10"
   >
-    <main class="grid grid-cols-4 grid-rows-2 lg:gap-9 gap-6">
-      <div class="row-span-2">
+    <main
+      class="grid sm:grid-cols-4 sm:grid-rows-2 grid-cols-1 grid-rows-7 lg:gap-9 gap-6"
+    >
+      <div class="sm:row-span-2">
         <div class="bg-darkBlue rounded-2xl">
           <div
-            class="bg-blue lg:pl-8 pl-6 lg:pr-4 pr-3 lg:pt-8 pt-10 lg:pb-20 pb-14 rounded-2xl flex flex-col"
+            class="bg-blue lg:pl-8 sm:pl-6 lg:pr-4 sm:pr-3 lg:pt-8 sm:pt-10 lg:pb-20 sm:pb-14 p-7 rounded-2xl flex sm:flex-col gap-6 sm:gap-0"
           >
             <img
               src="./images/image-jeremy.png"
               alt="Jeremy Robson"
-              class="w-2/5 border-box border-[3px] border-white rounded-full"
+              class="sm:w-2/5 w-3/12 border-box border-[3px] border-white rounded-full"
             />
-            <h1 class="mt-9 mb-1 text-paleBlue">Report for</h1>
-            <h1 class="lg:text-4xl text-3xl font-extralight leading-tight">
-              Jeremy Robson
-            </h1>
+            <div class="flex flex-col justify-center sm:justify-start">
+              <h1 class="sm:mt-9 mb-1 text-paleBlue">Report for</h1>
+              <h1
+                class="lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-extralight leading-tight"
+              >
+                Jeremy Robson
+              </h1>
+            </div>
           </div>
-          <div class="p-8 flex flex-col gap-4">
+          <div class="sm:p-8 p-6 flex sm:flex-col justify-between gap-4">
             <h2
               class="text-desaturatedBlue lg:text-lg text-base hover:text-white"
             >
@@ -50,9 +56,7 @@
         <div class="flex justify-end">
           <img src="./images/icon-work.svg" alt="Work" class="mr-5" />
         </div>
-        <div
-          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
-        >
+        <div class="activity__section cursor-pointer hover:bg-bgHo">
           <div class="activity__header">
             <p class="activity__title">Work</p>
             <button type="button" class="button">
@@ -69,9 +73,7 @@
         <div class="flex justify-end">
           <img src="./images/icon-play.svg" alt="Play" class="mr-5" />
         </div>
-        <div
-          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
-        >
+        <div class="activity__section cursor-pointer hover:bg-bgHo">
           <div class="activity__header">
             <p class="activity__title">Play</p>
             <button type="button" class="button">
@@ -88,9 +90,7 @@
         <div class="flex justify-end">
           <img src="./images/icon-study.svg" alt="Study" class="mr-5" />
         </div>
-        <div
-          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
-        >
+        <div class="activity__section cursor-pointer hover:bg-bgHo">
           <div class="activity__header">
             <p class="activity__title">Study</p>
             <button type="button" class="button">
@@ -107,9 +107,7 @@
         <div class="flex justify-end">
           <img src="./images/icon-exercise.svg" alt="Exercise" class="mr-5" />
         </div>
-        <div
-          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
-        >
+        <div class="activity__section cursor-pointer hover:bg-bgHo">
           <div class="activity__header">
             <p class="activity__title">Exercise</p>
             <button type="button" class="button">
@@ -126,9 +124,7 @@
         <div class="flex justify-end">
           <img src="./images/icon-social.svg" alt="Social" class="mr-5" />
         </div>
-        <div
-          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
-        >
+        <div class="activity__section cursor-pointer hover:bg-bgHo">
           <div class="activity__header">
             <p class="activity__title">Social</p>
             <button type="button" class="button">
@@ -145,9 +141,7 @@
         <div class="flex justify-end">
           <img src="./images/icon-self-care.svg" alt="Self Care" class="mr-5" />
         </div>
-        <div
-          class="bg-darkBlue activity__section cursor-pointer hover:bg-bgHoverColor"
-        >
+        <div class="activity__section cursor-pointer hover:bg-bgHo">
           <div class="activity__header">
             <p class="activity__title">Self Care</p>
             <button type="button" class="button">

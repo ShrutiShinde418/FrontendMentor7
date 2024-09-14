@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 .activity__card {
-  @apply rounded-xl relative overflow-hidden flex flex-col;
+  @apply rounded-xl sm:relative overflow-hidden flex flex-col;
 }
 
 .activity__section {
-  @apply xl:p-8 p-6 rounded-xl absolute w-full h-[80%] -bottom-0 flex flex-col lg:gap-6 gap-3;
+  @apply bg-darkBlue cursor-pointer hover:bg-bgHoverColor xl:p-8 p-6 rounded-xl sm:absolute w-full sm:h-[80%] sm:-bottom-0 flex flex-col lg:gap-6 gap-3;
 }
 
 .activity__header {
@@ -16,11 +16,11 @@
 }
 
 .activity__title {
-  @apply lg:text-lg text-sm font-medium;
+  @apply lg:text-lg sm:text-sm text-xl font-medium;
 }
 
 .activity__info {
-  @apply flex flex-col gap-3;
+  @apply flex sm:flex-col justify-between items-center sm:items-start sm:gap-3;
 }
 
 .activity__time {
