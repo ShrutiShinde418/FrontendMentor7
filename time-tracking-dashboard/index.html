@@ -15,9 +15,7 @@
   <body
     class="font-rubik min-h-screen grid sm:place-items-center bg-veryDarkBlue text-white xl:mx-24 lg:mx-16 mx-8 mt-10 mb-10"
   >
-    <main
-      class="grid sm:grid-cols-4 sm:grid-rows-2 grid-cols-1 lg:gap-9 gap-6"
-    >
+    <main class="grid sm:grid-cols-4 sm:grid-rows-2 grid-cols-1 lg:gap-9 gap-6">
       <div class="sm:row-span-2">
         <div class="bg-darkBlue rounded-2xl">
           <div
@@ -41,13 +39,17 @@
             <h2
               class="text-desaturatedBlue lg:text-lg text-base hover:text-white"
             >
-              <a href="#">Daily</a>
+              <a href="#" id="daily">Daily</a>
             </h2>
-            <h2 class="lg:text-lg text-base"><a href="#">Weekly</a></h2>
+            <h2
+              class="lg:text-lg text-base text-desaturatedBlue hover:text-white"
+            >
+              <a href="#" id="weekly" class="active">Weekly</a>
+            </h2>
             <h2
               class="text-desaturatedBlue lg:text-lg text-base hover:text-white"
             >
-              <a href="#">Monthly</a>
+              <a href="#" id="monthly">Monthly</a>
             </h2>
           </div>
         </div>
@@ -65,7 +67,9 @@
           </div>
           <div class="activity__info">
             <p class="activity__time">32hrs</p>
-            <p class="text-desaturatedBlue">Last Week - 36hrs</p>
+            <p class="text-desaturatedBlue">
+              Last Week - <span class="activity__last">36hrs</span>
+            </p>
           </div>
         </div>
       </div>
@@ -82,7 +86,9 @@
           </div>
           <div class="activity__info">
             <p class="activity__time">10hrs</p>
-            <p class="text-desaturatedBlue">Last Week - 8hrs</p>
+            <p class="text-desaturatedBlue">
+              Last Week - <span class="activity__last">8hrs</span>
+            </p>
           </div>
         </div>
       </div>
@@ -99,7 +105,9 @@
           </div>
           <div class="activity__info">
             <p class="activity__time">4hrs</p>
-            <p class="text-desaturatedBlue">Last Week - 7hrs</p>
+            <p class="text-desaturatedBlue">
+              Last Week - <span class="activity__last">7hrs</span>
+            </p>
           </div>
         </div>
       </div>
@@ -116,7 +124,9 @@
           </div>
           <div class="activity__info">
             <p class="activity__time">4hrs</p>
-            <p class="text-desaturatedBlue">Last Week - 5hrs</p>
+            <p class="text-desaturatedBlue">
+              Last Week - <span class="activity__last">5hrs</span>
+            </p>
           </div>
         </div>
       </div>
@@ -133,7 +143,9 @@
           </div>
           <div class="activity__info">
             <p class="activity__time">5hrs</p>
-            <p class="text-desaturatedBlue">Last Week - 10hrs</p>
+            <p class="text-desaturatedBlue">
+              Last Week - <span class="activity__last">10hrs</span>
+            </p>
           </div>
         </div>
       </div>
@@ -150,10 +162,13 @@
           </div>
           <div class="activity__info">
             <p class="activity__time">2hrs</p>
-            <p class="text-desaturatedBlue">Last Week - 2hrs</p>
+            <p class="text-desaturatedBlue">
+              Last Week - <span class="activity__last">2hrs</span>
+            </p>
           </div>
         </div>
       </div>
     </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>

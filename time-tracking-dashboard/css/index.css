@@ -16,11 +16,11 @@
 }
 
 .activity__title {
-  @apply lg:text-lg sm:text-sm text-xl font-medium;
+  @apply lg:text-lg sm:text-sm text-base font-medium;
 }
 
 .activity__info {
-  @apply flex sm:flex-col justify-between items-center sm:items-start sm:gap-3;
+  @apply flex sm:flex-col justify-between items-center sm:items-start sm:gap-3 gap-4;
 }
 
 .activity__time {
@@ -30,4 +30,8 @@
 .button:hover {
   filter: brightness(0) saturate(100%) invert(99%) sepia(90%) saturate(39%)
     hue-rotate(113deg) brightness(109%) contrast(97%);
+}
+
+.active {
+  @apply text-white;
 }
