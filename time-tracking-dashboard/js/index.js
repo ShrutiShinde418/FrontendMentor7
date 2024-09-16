@@ -7,7 +7,7 @@ const weeklyBtn = document.getElementById("weekly");
 
 const fetchData = async () => {
   try {
-    const response = await fetch("../data/data.json");
+    const response = await fetch("../data.json");
     data = await response.json();
 
     for (let i = 0; i < allActivityTimes.length; i++) {
