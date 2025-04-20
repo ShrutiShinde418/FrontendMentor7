@@ -13,8 +13,14 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const emailValue = email.value.trim();
-
-  if (!isValidEmail(emailValue)) {
+  if (emailValue === "") {
+    errorElement.innerText =
+      "Whoops! It looks like you forgot to add your email";
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      errorElement.style.marginBottom = "1.25em";
+    }
+    email.classList.add("error-control");
+  } else if (!isValidEmail(emailValue)) {
     errorElement.innerText = "Please provide a valid email address";
     if (window.matchMedia("(max-width: 768px)").matches) {
       errorElement.style.marginBottom = "1.25em";
