@@ -15,39 +15,35 @@
     <link rel="stylesheet" href="./css/index.css" />
 
     <title>Frontend Mentor | Ping coming soon page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
       <img src="./images/logo.svg" alt="Ping" class="logo-image" />
       <h1>We are launching <span>soon!</span></h1>
       <h2>Subscribe and get notified</h2>
-      <form>
+      <form id="form">
         <input
-          type="email"
           name="email"
           id="email"
           placeholder="Your email address..."
+          class="input-control"
         />
         <button type="submit">Notify Me</button>
+        <div class="error"></div>
       </form>
       <img
         src="./images/illustration-dashboard.png"
         alt="Dashboard illustration"
+        class="illustration"
       />
     </main>
     <!-- image -->
     <footer>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+      </div>
       <h3>&copy; Copyright Ping. All rights reserved.</h3>
       <p class="attribution">
         Challenge by
@@ -57,15 +53,10 @@
         <a href="https://github.com/ShrutiShinde418">Shruti Shinde</a>.
       </p>
     </footer>
-
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://github.com/ShrutiShinde418">Shruti Shinde</a>.
-      </p>
-    </footer> -->
+    <script
+      src="https://kit.fontawesome.com/db07eb4fcc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
