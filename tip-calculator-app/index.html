@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="img-container">
+        <img src="./images/logo.svg" alt="Splitter Logo" />
+      </div>
+      <form id="tip-calculator">
+        <div class="input-controls">
+          <div class="form-control">
+            <label for="bill">Bill</label>
+            <img
+              src="./images/icon-dollar.svg"
+              alt="dollar"
+              class="input-img"
+            />
+            <input type="number" name="bill" id="bill" value="0" min="0" />
+          </div>
+          <div class="form-control">
+            <label for="">Select Tip %</label>
+            <div class="input-buttons">
+              <input type="button" value="5%" />
+              <input type="button" value="10%" />
+              <input type="button" value="15%" />
+              <input type="button" value="25%" />
+              <input type="button" value="50%" />
+              <input type="button" value="Custom" class="custom" />
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="people">Number of People</label>
+            <img
+              src="./images/icon-person.svg"
+              alt="dollar"
+              class="input-img"
+            />
+            <input type="number" name="people" id="people" min="0" value="0" />
+          </div>
+        </div>
+        <div class="calculator-controls">
+          <div class="calculator-result">
+            <div>
+              <p class="heading">Tip Amount</p>
+              <p class="sub-heading">/ person</p>
+            </div>
+            <div class="result">$0.00</div>
+          </div>
+          <div class="calculator-result">
+            <div>
+              <p class="heading">Total</p>
+              <p class="sub-heading">/ person</p>
+            </div>
+            <div class="result">$0.00</div>
+          </div>
+          <button type="button" class="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/ShrutiShinde418">ShrutiShinde418</a>.
+    </div>
+  </body>
+</html>

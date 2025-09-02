@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$strong-cyan: hsl(172, 67%, 45%);
+$dark-cyan: hsl(183, 100%, 15%);
+$dark-gray-cyan-1: hsl(186, 14%, 43%);
+$dark-gray-cyan-2: hsl(184, 14%, 56%);
+$light-gray-cyan-1: hsl(185, 41%, 84%);
+$light-gray-cyan-2: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+$font: "Space Mono";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: $font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $light-gray-cyan-1;
+}
+
+.img-container {
+  text-align: center;
+  margin: 3em 0em;
+}
+
+#tip-calculator {
+  justify-self: center;
+  background-color: $white;
+  padding: 2.5em;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 400px));
+  gap: 3em;
+//   margin-bottom: 3em;
+
+  .input-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+
+    .form-control {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25em;
+      position: relative;
+
+      .input-img {
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+      }
+
+      label {
+        color: $dark-gray-cyan-1;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+
+      input[type="number"] {
+        font-family: $font;
+        border-radius: 0.25rem;
+        outline: none;
+        border: none;
+        font-size: 24px;
+        background-color: $light-gray-cyan-2;
+        color: $dark-gray-cyan-2;
+        font-weight: 600;
+        text-align: right;
+        padding: 0.2em;
+      }
+
+      .input-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        gap: 1em;
+        margin-top: 0.5em;
+
+        input[type="button"] {
+          font-family: inherit;
+          border: none;
+          outline: none;
+          padding: 0.5em 1.5em;
+          font-weight: 600;
+          font-size: 1.25rem;
+          border-radius: 0.25rem;
+          cursor: pointer;
+        }
+
+        input[type="button"]:not(.custom) {
+          background-color: $dark-cyan;
+          color: $white;
+        }
+
+        .custom {
+          background-color: $light-gray-cyan-2;
+          color: $dark-gray-cyan-1;
+        }
+      }
+    }
+  }
+
+  .calculator-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    background-color: $dark-cyan;
+    padding: 2.5em;
+    border-radius: 1rem;
+
+    .calculator-result {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .heading {
+        color: $white;
+        font-size: 1rem;
+      }
+
+      .sub-heading {
+        font-size: 0.85rem;
+        color: $dark-gray-cyan-2;
+        font-weight: 600;
+      }
+
+      .result {
+        color: $strong-cyan;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    }
+
+    .reset {
+      background-color: $dark-gray-cyan-1;
+      color: $light-gray-cyan-1;
+      padding: 0.75em 1em;
+      font-family: inherit;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      border: none;
+      outline: none;
+      margin-top: auto;
+      cursor: pointer;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 4em;
+  margin-bottom: 1em;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

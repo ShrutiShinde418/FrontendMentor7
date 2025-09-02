@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: "Space Mono";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(185deg, 41%, 84%);
+}
+
+.img-container {
+  text-align: center;
+  margin: 3em 0em;
+}
+
+#tip-calculator {
+  justify-self: center;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 2.5em;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 400px));
+  gap: 3em;
+}
+#tip-calculator .input-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+}
+#tip-calculator .input-controls .form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  position: relative;
+}
+#tip-calculator .input-controls .form-control .input-img {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+#tip-calculator .input-controls .form-control label {
+  color: hsl(186deg, 14%, 43%);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+#tip-calculator .input-controls .form-control input[type=number] {
+  font-family: "Space Mono";
+  border-radius: 0.25rem;
+  outline: none;
+  border: none;
+  font-size: 24px;
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(184deg, 14%, 56%);
+  font-weight: 600;
+  text-align: right;
+  padding: 0.2em;
+}
+#tip-calculator .input-controls .form-control .input-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 1em;
+  margin-top: 0.5em;
+}
+#tip-calculator .input-controls .form-control .input-buttons input[type=button] {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  padding: 0.5em 1.5em;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+#tip-calculator .input-controls .form-control .input-buttons input[type=button]:not(.custom) {
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+}
+#tip-calculator .input-controls .form-control .input-buttons .custom {
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(186deg, 14%, 43%);
+}
+#tip-calculator .calculator-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  background-color: hsl(183deg, 100%, 15%);
+  padding: 2.5em;
+  border-radius: 1rem;
+}
+#tip-calculator .calculator-controls .calculator-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tip-calculator .calculator-controls .calculator-result .heading {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1rem;
+}
+#tip-calculator .calculator-controls .calculator-result .sub-heading {
+  font-size: 0.85rem;
+  color: hsl(184deg, 14%, 56%);
+  font-weight: 600;
+}
+#tip-calculator .calculator-controls .calculator-result .result {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#tip-calculator .calculator-controls .reset {
+  background-color: hsl(186deg, 14%, 43%);
+  color: hsl(185deg, 41%, 84%);
+  padding: 0.75em 1em;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=index.css.map */
