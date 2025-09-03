@@ -1,0 +1,23 @@
+$borderRadius: 0.25rem;
+$inputFieldFontWeight: 600;
+
+@mixin flexDirectionColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin inputField($padding, $fontSize, $border) {
+  font-family: inherit;
+  border-radius: $borderRadius;
+  outline: none;
+  font-weight: $inputFieldFontWeight;
+  padding: $padding;
+  font-size: $fontSize;
+  border: $border;
+}
+
+@mixin text($color, $fontSize, $fontWeight) {
+  font-size: $fontSize;
+  color: $color;
+  font-weight: $fontWeight;
+}

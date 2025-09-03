@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
-$strong-cyan: hsl(172, 67%, 45%);
-$dark-cyan: hsl(183, 100%, 15%);
-$dark-gray-cyan-1: hsl(186, 14%, 43%);
-$dark-gray-cyan-2: hsl(184, 14%, 56%);
-$light-gray-cyan-1: hsl(185, 41%, 84%);
-$light-gray-cyan-2: hsl(189, 41%, 97%);
-$white: hsl(0, 0%, 100%);
-$font: "Space Mono";
+@import "variables.scss";
+@import "styles.scss";
 
 *,
 *::before,
@@ -20,7 +13,7 @@ $font: "Space Mono";
 html,
 body {
   min-height: 100vh;
-  font-family: $font;
+  font-family: $font, $default-font;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,17 +33,14 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(350px, 400px));
   gap: 3em;
-//   margin-bottom: 3em;
 
   .input-controls {
-    display: flex;
-    flex-direction: column;
+    @include flexDirectionColumn();
     justify-content: space-between;
     gap: 2em;
 
     .form-control {
-      display: flex;
-      flex-direction: column;
+      @include flexDirectionColumn();
       gap: 0.25em;
       position: relative;
 
@@ -61,22 +51,20 @@ body {
       }
 
       label {
-        color: $dark-gray-cyan-1;
-        font-size: 0.95rem;
-        font-weight: 600;
+        @include text($dark-gray-cyan-1, 0.95rem, 600);
       }
 
       input[type="number"] {
-        font-family: $font;
-        border-radius: 0.25rem;
-        outline: none;
-        border: none;
-        font-size: 24px;
+        @include inputField(0.2em, 24px, 2px solid $light-gray-cyan-2);
+
         background-color: $light-gray-cyan-2;
         color: $dark-gray-cyan-2;
-        font-weight: 600;
         text-align: right;
-        padding: 0.2em;
+
+        &:focus,
+        &:active {
+          border: 2px solid $strong-cyan;
+        }
       }
 
       .input-buttons {
@@ -87,13 +75,8 @@ body {
         margin-top: 0.5em;
 
         input[type="button"] {
-          font-family: inherit;
-          border: none;
-          outline: none;
-          padding: 0.5em 1.5em;
-          font-weight: 600;
-          font-size: 1.25rem;
-          border-radius: 0.25rem;
+          @include inputField(0.5em 1.5em, 1.25rem, none);
+
           cursor: pointer;
         }
 
@@ -111,8 +94,7 @@ body {
   }
 
   .calculator-controls {
-    display: flex;
-    flex-direction: column;
+    @include flexDirectionColumn();
     gap: 2.5em;
     background-color: $dark-cyan;
     padding: 2.5em;
@@ -124,25 +106,20 @@ body {
       align-items: center;
 
       .heading {
-        color: $white;
-        font-size: 1rem;
+        @include text($white, 1rem, 400);
       }
 
       .sub-heading {
-        font-size: 0.85rem;
-        color: $dark-gray-cyan-2;
-        font-weight: 600;
+        @include text($dark-gray-cyan-2, 0.85rem, 600);
       }
 
       .result {
-        color: $strong-cyan;
-        font-size: 2.5rem;
-        font-weight: 700;
+        @include text($strong-cyan, 2.5rem, 700);
       }
     }
 
     .reset {
-      background-color: $dark-gray-cyan-1;
+      background-color: lighten($dark-cyan, 5%);
       color: $light-gray-cyan-1;
       padding: 0.75em 1em;
       font-family: inherit;
@@ -161,12 +138,11 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: $default-font;
   margin-top: 4em;
   margin-bottom: 1em;
 
   a {
-    color: hsl(228, 45%, 44%);
+    color: $blue;
   }
 }

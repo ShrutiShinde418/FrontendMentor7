@@ -10,7 +10,7 @@
 html,
 body {
   min-height: 100vh;
-  font-family: "Space Mono";
+  font-family: "Space Mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,21 +49,24 @@ body {
   left: 20px;
 }
 #tip-calculator .input-controls .form-control label {
-  color: hsl(186deg, 14%, 43%);
   font-size: 0.95rem;
+  color: hsl(186deg, 14%, 43%);
   font-weight: 600;
 }
 #tip-calculator .input-controls .form-control input[type=number] {
-  font-family: "Space Mono";
+  font-family: inherit;
   border-radius: 0.25rem;
   outline: none;
-  border: none;
+  font-weight: 600;
+  padding: 0.2em;
   font-size: 24px;
+  border: 2px solid hsl(189deg, 41%, 97%);
   background-color: hsl(189deg, 41%, 97%);
   color: hsl(184deg, 14%, 56%);
-  font-weight: 600;
   text-align: right;
-  padding: 0.2em;
+}
+#tip-calculator .input-controls .form-control input[type=number]:focus, #tip-calculator .input-controls .form-control input[type=number]:active {
+  border: 2px solid hsl(172deg, 67%, 45%);
 }
 #tip-calculator .input-controls .form-control .input-buttons {
   display: grid;
@@ -74,12 +77,12 @@ body {
 }
 #tip-calculator .input-controls .form-control .input-buttons input[type=button] {
   font-family: inherit;
-  border: none;
-  outline: none;
-  padding: 0.5em 1.5em;
-  font-weight: 600;
-  font-size: 1.25rem;
   border-radius: 0.25rem;
+  outline: none;
+  font-weight: 600;
+  padding: 0.5em 1.5em;
+  font-size: 1.25rem;
+  border: none;
   cursor: pointer;
 }
 #tip-calculator .input-controls .form-control .input-buttons input[type=button]:not(.custom) {
@@ -104,8 +107,9 @@ body {
   align-items: center;
 }
 #tip-calculator .calculator-controls .calculator-result .heading {
-  color: hsl(0deg, 0%, 100%);
   font-size: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 400;
 }
 #tip-calculator .calculator-controls .calculator-result .sub-heading {
   font-size: 0.85rem;
@@ -113,12 +117,12 @@ body {
   font-weight: 600;
 }
 #tip-calculator .calculator-controls .calculator-result .result {
-  color: hsl(172deg, 67%, 45%);
   font-size: 2.5rem;
+  color: hsl(172deg, 67%, 45%);
   font-weight: 700;
 }
 #tip-calculator .calculator-controls .reset {
-  background-color: hsl(186deg, 14%, 43%);
+  background-color: #006166;
   color: hsl(185deg, 41%, 84%);
   padding: 0.75em 1em;
   font-family: inherit;
