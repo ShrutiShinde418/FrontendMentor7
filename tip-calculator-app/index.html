@@ -26,7 +26,14 @@
               alt="dollar"
               class="input-img"
             />
-            <input type="number" name="bill" id="bill" value="0" min="0" />
+            <input
+              type="number"
+              name="bill"
+              id="bill"
+              value="0"
+              min="0"
+              class="input-number"
+            />
           </div>
           <div class="form-control">
             <label for="">Select Tip %</label>
@@ -40,14 +47,23 @@
             </div>
           </div>
           <div class="form-control">
-            <label for="people">Number of People</label>
-            <p class="error">Can't be zero</p>
+            <div class="people-label">
+              <label for="people">Number of People</label>
+              <p class="error">Can't be zero</p>
+            </div>
             <img
               src="./images/icon-person.svg"
               alt="dollar"
               class="input-img"
             />
-            <input type="number" name="people" id="people" min="0" value="0" />
+            <input
+              type="number"
+              name="people"
+              id="people"
+              min="0"
+              value="0"
+              class="input-number"
+            />
           </div>
         </div>
         <div class="calculator-controls">
@@ -76,5 +92,6 @@
       >. Coded by
       <a href="https://github.com/ShrutiShinde418">ShrutiShinde418</a>.
     </div>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

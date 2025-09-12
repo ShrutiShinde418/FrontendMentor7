@@ -53,7 +53,7 @@ body {
   color: hsl(186deg, 14%, 43%);
   font-weight: 600;
 }
-#tip-calculator .input-controls .form-control input[type=number] {
+#tip-calculator .input-controls .form-control .input-number {
   font-family: inherit;
   border-radius: 0.25rem;
   outline: none;
@@ -65,8 +65,21 @@ body {
   color: hsl(184deg, 14%, 56%);
   text-align: right;
 }
-#tip-calculator .input-controls .form-control input[type=number]:focus, #tip-calculator .input-controls .form-control input[type=number]:active {
+#tip-calculator .input-controls .form-control .input-number:focus, #tip-calculator .input-controls .form-control .input-number:active {
   border: 2px solid hsl(172deg, 67%, 45%);
+}
+#tip-calculator .input-controls .form-control .error-control {
+  border: 2px solid #d37d6e;
+}
+#tip-calculator .input-controls .form-control .people-label {
+  display: flex;
+  justify-content: space-between;
+}
+#tip-calculator .input-controls .form-control .people-label .error {
+  font-size: 0.95rem;
+  color: #d37d6e;
+  font-weight: 600;
+  display: none;
 }
 #tip-calculator .input-controls .form-control .input-buttons {
   display: grid;
@@ -85,9 +98,17 @@ body {
   border: none;
   cursor: pointer;
 }
+#tip-calculator .input-controls .form-control .input-buttons input[type=button]:hover {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
+}
 #tip-calculator .input-controls .form-control .input-buttons input[type=button]:not(.custom) {
   background-color: hsl(183deg, 100%, 15%);
   color: hsl(0deg, 0%, 100%);
+}
+#tip-calculator .input-controls .form-control .input-buttons input[type=button]:not(.custom):hover {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
 }
 #tip-calculator .input-controls .form-control .input-buttons .custom {
   background-color: hsl(189deg, 41%, 97%);
@@ -135,6 +156,10 @@ body {
   margin-top: auto;
   cursor: pointer;
 }
+#tip-calculator .calculator-controls .reset:hover {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
+}
 
 .attribution {
   font-size: 11px;
@@ -145,6 +170,11 @@ body {
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+.active-btn {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
 }
 
 /*# sourceMappingURL=index.css.map */

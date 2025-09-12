@@ -1,5 +1,4 @@
-$borderRadius: 0.25rem;
-$inputFieldFontWeight: 600;
+@import "variables.scss";
 
 @mixin flexDirectionColumn {
   display: flex;
@@ -20,4 +19,9 @@ $inputFieldFontWeight: 600;
   font-size: $fontSize;
   color: $color;
   font-weight: $fontWeight;
+}
+
+@mixin buttonHoverState {
+  color: $dark-cyan;
+  background-color: $strong-cyan;
 }

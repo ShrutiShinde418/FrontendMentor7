@@ -54,7 +54,7 @@ body {
         @include text($dark-gray-cyan-1, 0.95rem, 600);
       }
 
-      input[type="number"] {
+      .input-number {
         @include inputField(0.2em, 24px, 2px solid $light-gray-cyan-2);
 
         background-color: $light-gray-cyan-2;
@@ -64,6 +64,19 @@ body {
         &:focus,
         &:active {
           border: 2px solid $strong-cyan;
+        }
+      }
+
+      .error-control {
+        border: 2px solid $error;
+      }
+
+      .people-label {
+        display: flex;
+        justify-content: space-between;
+        .error {
+          @include text($error, 0.95rem, 600);
+          display: none;
         }
       }
 
@@ -78,11 +91,19 @@ body {
           @include inputField(0.5em 1.5em, 1.25rem, none);
 
           cursor: pointer;
+
+          &:hover {
+            @include buttonHoverState();
+          }
         }
 
         input[type="button"]:not(.custom) {
           background-color: $dark-cyan;
           color: $white;
+
+          &:hover {
+            @include buttonHoverState();
+          }
         }
 
         .custom {
@@ -131,6 +152,10 @@ body {
       outline: none;
       margin-top: auto;
       cursor: pointer;
+
+      &:hover {
+        @include buttonHoverState();
+      }
     }
   }
 }
@@ -145,4 +170,9 @@ body {
   a {
     color: $blue;
   }
+}
+
+.active-btn {
+  color: $dark-cyan;
+  background-color: $strong-cyan;
 }
