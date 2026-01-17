@@ -19,7 +19,7 @@ body {
 
 .img-container {
   text-align: center;
-  margin: 3em 0em;
+  margin: 3em 0;
 }
 
 #tip-calculator {
@@ -83,7 +83,7 @@ body {
 }
 #tip-calculator .input-controls .form-control .input-buttons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
   text-align: center;
   gap: 1em;
   margin-top: 0.5em;
@@ -97,18 +97,31 @@ body {
   font-size: 1.25rem;
   border: none;
   cursor: pointer;
+  field-sizing: fixed;
 }
 #tip-calculator .input-controls .form-control .input-buttons input[type=button]:hover {
   color: hsl(183deg, 100%, 15%);
-  background-color: hsl(172deg, 67%, 45%);
+  background-color: #95eadf;
 }
-#tip-calculator .input-controls .form-control .input-buttons input[type=button]:not(.custom) {
+#tip-calculator .input-controls .form-control .input-buttons .value-btn {
   background-color: hsl(183deg, 100%, 15%);
   color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 0.25rem;
+  outline: none;
+  font-weight: 600;
+  padding: 0.5em 1.5em;
+  font-size: 1.35rem;
+  border: none;
 }
-#tip-calculator .input-controls .form-control .input-buttons input[type=button]:not(.custom):hover {
+#tip-calculator .input-controls .form-control .input-buttons .value-btn input[type=radio] {
+  display: none;
+}
+#tip-calculator .input-controls .form-control .input-buttons .value-btn:hover {
   color: hsl(183deg, 100%, 15%);
-  background-color: hsl(172deg, 67%, 45%);
+  background-color: #95eadf;
 }
 #tip-calculator .input-controls .form-control .input-buttons .custom {
   background-color: hsl(189deg, 41%, 97%);
@@ -158,7 +171,7 @@ body {
 }
 #tip-calculator .calculator-controls .reset:hover {
   color: hsl(183deg, 100%, 15%);
-  background-color: hsl(172deg, 67%, 45%);
+  background-color: #95eadf;
 }
 
 .attribution {
@@ -173,8 +186,8 @@ body {
 }
 
 .active-btn {
-  color: hsl(183deg, 100%, 15%);
-  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%) !important;
+  background-color: hsl(172deg, 67%, 45%) !important;
 }
 
 /*# sourceMappingURL=index.css.map */

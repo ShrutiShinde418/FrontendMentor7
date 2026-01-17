@@ -23,5 +23,5 @@
 
 @mixin buttonHoverState {
   color: $dark-cyan;
-  background-color: $strong-cyan;
+  background-color: lighten($strong-cyan, 30%);
 }

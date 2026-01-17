@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,13 +36,28 @@
             />
           </div>
           <div class="form-control">
-            <label for="">Select Tip %</label>
+            <label>Select Tip %</label>
             <div class="input-buttons">
-              <input type="button" value="5%" />
-              <input type="button" value="10%" />
-              <input type="button" value="15%" />
-              <input type="button" value="25%" />
-              <input type="button" value="50%" />
+              <label class="value-btn" for="tip-5">
+                <input type="radio" value="5" name="tip" id="tip-5" />
+                5%
+              </label>
+              <label class="value-btn" for="tip-10">
+                <input type="radio" value="10" name="tip" id="tip-10" />
+                10%
+              </label>
+              <label class="value-btn" for="tip-15">
+                <input type="radio" value="15" name="tip" id="tip-15" />
+                15%
+              </label>
+              <label class="value-btn" for="tip-25">
+                <input type="radio" value="25" name="tip" id="tip-25" />
+                25%
+              </label>
+              <label class="value-btn" for="tip-50">
+                <input type="radio" value="50" name="tip" id="tip-50" />
+                50%
+              </label>
               <input type="button" value="Custom" class="custom" />
             </div>
           </div>
@@ -72,14 +87,14 @@
               <p class="heading">Tip Amount</p>
               <p class="sub-heading">/ person</p>
             </div>
-            <div class="result">$0.00</div>
+            <div class="result" id="perPersonTip">$0.00</div>
           </div>
           <div class="calculator-result">
             <div>
               <p class="heading">Total</p>
               <p class="sub-heading">/ person</p>
             </div>
-            <div class="result">$0.00</div>
+            <div class="result" id="totalAmountPerPerson">$0.00</div>
           </div>
           <button type="button" class="reset">Reset</button>
         </div>
