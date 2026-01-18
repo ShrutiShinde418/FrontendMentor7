@@ -190,4 +190,57 @@ body {
   background-color: hsl(172deg, 67%, 45%) !important;
 }
 
+@media (max-width: 992px) {
+  #tip-calculator {
+    max-width: 100%;
+    grid-template-columns: repeat(2, minmax(300px, 300px));
+    gap: 2em;
+  }
+  #tip-calculator .input-controls .form-control .input-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 740px) {
+  body {
+    width: 100%;
+  }
+  body main {
+    max-width: 100%;
+    width: 100%;
+  }
+  body #tip-calculator {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  body #tip-calculator {
+    min-width: 100%;
+    padding: 2em;
+    gap: 2.5em;
+  }
+  body #tip-calculator .input-controls {
+    gap: 2.5em;
+  }
+  body #tip-calculator .input-controls .form-control label {
+    font-size: 0.85rem;
+  }
+  body #tip-calculator .calculator-controls {
+    padding: 1.5em;
+  }
+  body #tip-calculator .calculator-controls .reset {
+    font-size: 0.85rem;
+  }
+  body #tip-calculator .calculator-controls .calculator-result .heading {
+    font-size: 0.85rem;
+  }
+  body #tip-calculator .calculator-controls .calculator-result .sub-heading {
+    font-size: 0.75rem;
+  }
+  body #tip-calculator .calculator-controls .calculator-result .result {
+    font-size: 1.75rem;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

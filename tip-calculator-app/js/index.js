@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   noOfPeople.value = totalNoOfPeople;
   const customButton = document.querySelector(".custom");
   const error = document.querySelector(".error");
-  const radioButtons = document.getElementsByName("tip");
+  const radioButtons = document.querySelectorAll('input[name="tip"]');
   const perPersonTip = document.getElementById("perPersonTip");
   const totalAmountPerPerson = document.getElementById("totalAmountPerPerson");
   const resetButton = document.querySelector(".reset");
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  bill.addEventListener("change", (e) => {
+  bill.addEventListener("input", (e) => {
     billAmount = +e.target.value;
 
     if (billAmount > 0 && totalNoOfPeople === 0) {
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  noOfPeople.addEventListener("change", (e) => {
+  noOfPeople.addEventListener("input", (e) => {
     totalNoOfPeople = +e.target.value;
     if (billAmount > 0 && totalNoOfPeople === 0) {
       error.style.display = "block";
